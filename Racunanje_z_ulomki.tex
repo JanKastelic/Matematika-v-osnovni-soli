@@ -193,33 +193,49 @@
         \begin{frame}[t]
             \frametitle{Neenačbe}
 
-            \begin{alertblock}{}
-                \textbf{Neenačba} je izjavna oblika z neenakostjo ($<$, $>$, $\leq$, $\geq$) in neznanko.
-            \end{alertblock}
+            \begin{columns}
+                \column{0.53\textwidth}
+                    \only<1-2>{\begin{alertblock}{}
+                        \textbf{Neenakost} je izjavna oblika, v kateri nastopajo znaki $<$, $>$, $\leq$ ali $\geq$.
+                    \end{alertblock}
+                    ~ \\ ~ \\ ~ \\ ~ \\}
+                    \only<3->{\begin{alertblock}{}
+                        \textbf{Neenakost} je izjavna oblika, v kateri nastopajo znaki $<$, $>$, $\leq$ ali $\geq$.
+                    \end{alertblock}
+                     $$ 12.5 - 2 > 8 $$  $$ 3 + 6 \leq 9 $$}
 
-            \begin{table}
-                \centering
-                \addtolength{\tabcolsep}{6pt}
-                \renewcommand{\arraystretch}{1.5}                
-                \begin{tabular}{||c|c||} 
-                    \hhline{|t:==:t|}
-                            $\mathbf{<}$ & manjše   \\ 
-                    \hline
-                            $\mathbf{>}$ & večje   \\ 
-                    \hline
-                            $\mathbf{\leq}$ & manjše ali enako   \\ 
-                    \hline
-                            $\mathbf{\geq}$ & večje ali enako  \\  
-                    \hhline{|b:==:b|}
-                \end{tabular}
-            \end{table}
+                \column{0.45\textwidth}
+                    \onslide<2->{\begin{table}
+                        \centering
+                        \addtolength{\tabcolsep}{6pt}
+                        \renewcommand{\arraystretch}{1.4}                
+                        \begin{tabular}{||c|c||} 
+                            \hhline{|t:==:t|}
+                                    $\mathbf{<}$ & manjše   \\ 
+                            \hline
+                                    $\mathbf{>}$ & večje   \\ 
+                            \hline
+                                    $\mathbf{\leq}$ & manjše ali enako   \\ 
+                            \hline
+                                    $\mathbf{\geq}$ & večje ali enako  \\  
+                            \hhline{|b:==:b|}
+                        \end{tabular}
+                    \end{table}}
+            \end{columns}
+
+            \onslide<4->{\begin{alertblock}{}
+                \textbf{Neenačba} je neenakost, v kateri nastopa neznanka.
+            \end{alertblock}}
+
+            \onslide<5->{$$ 0.7 + x \geq 4 $$
+                $$ 3\cdot x + 5 < 17.6 $$
+            }
 
         \end{frame}
 
-        \begin{frame}
-
+        \begin{frame}[t]
             \begin{alertblock}{}
-                \textbf{Osnovni množica} $\mathbf{\mathcal{U}}$ je množica števila, ki jih smemo uporabiti pri reševanju neenačbe ali neenačbe. Če osnovna množica ni posebej izbrana, je $\mathcal{U}=\mathbb{N}$. 
+                \textbf{Osnovna množica} $\mathbf{\mathcal{U}}$ je množica števil, ki jih smemo uporabiti pri reševanju neenačbe. Če osnovna množica ni posebej izbrana, je $\mathcal{U}=\mathbb{N}$. 
             \end{alertblock}
 
             \begin{alertblock}{}
