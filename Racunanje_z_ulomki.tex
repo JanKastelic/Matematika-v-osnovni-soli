@@ -234,22 +234,45 @@
         \end{frame}
 
         \begin{frame}[t]
-            \begin{alertblock}{}
+            \only<1->{\begin{alertblock}{}
                 \textbf{Osnovna množica} $\mathbf{\mathcal{U}}$ je množica števil, ki jih smemo uporabiti pri reševanju neenačbe. Če osnovna množica ni posebej izbrana, je $\mathcal{U}=\mathbb{N}$. 
-            \end{alertblock}
+            \end{alertblock}}
 
-            \begin{alertblock}{}
+            \only<2->{\begin{alertblock}{}
                 \textbf{Rešitev neenačbe} je vsako število, za katero dobimo iz izjavne oblike pravilno izjavo. Zapišemo množico rešitev, ki jo označimo z $\mathbf{\mathcal{R}}$. 
-            \end{alertblock}
+            \end{alertblock}}
 
-            \begin{block}{}
+            \begin{columns}
+                \column{0.32\textwidth}            
+                \only<3->{$$ x - 3\frac{1}{4} < 9$$
+                    $$\mathcal{R}=\left\{1,2,3,4,5\right\}$$}
+
+               \column{0.32\textwidth}          
+                \only<4->{$$\mathcal{U}=\left\{2,3,4\right\} $$
+                    $$ x - 3\frac{1}{4} < 9$$
+                    $$\mathcal{R}=\left\{2,3,4\right\}$$}
+
+                \column{0.32\textwidth}          
+                \only<6->{$$\mathcal{U}=\left\{10,11,12,13,14,15\right\} $$
+                    $$ x - 3\frac{1}{4} < 9$$
+                    $$\mathcal{R}=\left\{\right\}$$}
+            \end{columns}
+
+
+            \only<5->{\begin{block}{}
                 Množica rešitev je odvisna od osnovne množice.
                 Kadar v osnovni množici ni števila, ki reši enačbo ali neenačbo, je množica rešitev prazna. Kar zapišemo $\mathcal{R}=\emptyset$ ali $\mathcal{R}=\left\{\right\}$.
-            \end{block}
+            \end{block}}
         \end{frame}
 
-        \subsection{Špela se preizkusi}
-        
         \begin{frame}[t]
-            \frametitle{Špela se preizkusi}
+            \begin{exampleblock}{Reševanje neenačb s preglednico}
+                
+            \end{exampleblock}
         \end{frame}
+
+        % \subsection{Špela se preizkusi}
+        
+        % \begin{frame}[t]
+        %     \frametitle{Špela se preizkusi}
+        % \end{frame}
