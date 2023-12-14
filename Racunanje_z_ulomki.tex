@@ -22,12 +22,6 @@
             \end{alertblock}
         \end{frame}
 
-        \begin{frame}[t]
-            \begin{block}{POMNI}
-                Rezultat zapišemo s celim delom in delom manjšim od $1$ ter ga okrajšamo.
-            \end{block}
-        \end{frame}
-
     \subsection{Seštevanje ulomkov}
 
         \begin{frame}[t]
@@ -176,33 +170,33 @@
 
     \subsection{Izrazi s spremenljivkami}
         
-        \begin{frame}[t]
-            \frametitle{Izrazi s spremenljivkami}
-        \end{frame}
+        % \begin{frame}[t]
+        %     \frametitle{Izrazi s spremenljivkami}
+        % \end{frame}
 
     \subsection{Enačbe in neenačbe}
         
-        \begin{frame}[t]
-            \frametitle{Enačbe in neenačbe}
+        % \begin{frame}[t]
+        %     \frametitle{Enačbe in neenačbe}
 
-            \begin{alertblock}{Reševanje enačb in neenačb}
-                Besedilne naloge, ki vsebujejo neznane količine (enačbe ali neenačbe) rešujemo tako, da najprej \textbf{določimo neznanko}, nato \textbf{sklepamo}, nakar \textbf{rešimo nalogo} s preglednico, diagramom ali enačbo, na koncu \textbf{preverimo rezultat} in \textbf{zapišemo odgovor}.
-            \end{alertblock}
-        \end{frame}
+        %     \begin{alertblock}{Reševanje enačb in neenačb}
+        %         Besedilne naloge, ki vsebujejo neznane količine (enačbe ali neenačbe) rešujemo tako, da najprej \textbf{določimo neznanko}, nato \textbf{sklepamo}, nakar \textbf{rešimo nalogo} s preglednico, diagramom ali enačbo, na koncu \textbf{preverimo rezultat} in \textbf{zapišemo odgovor}.
+        %     \end{alertblock}
+        % \end{frame}
 
         \begin{frame}[t]
             \frametitle{Neenačbe}
 
             \begin{columns}
                 \column{0.53\textwidth}
-                    \only<1-2>{\begin{alertblock}{}
-                        \textbf{Neenakost} je izjavna oblika, v kateri nastopajo znaki $<$, $>$, $\leq$ ali $\geq$.
-                    \end{alertblock}
-                    ~ \\ ~ \\ ~ \\ ~ \\}
-                    \only<3->{\begin{alertblock}{}
-                        \textbf{Neenakost} je izjavna oblika, v kateri nastopajo znaki $<$, $>$, $\leq$ ali $\geq$.
-                    \end{alertblock}
-                     $$ 12.5 - 2 > 8 $$  $$ 3 + 6 \leq 9 $$}
+                    \only<1->{\begin{alertblock}{}
+                        \textbf{Neenakost} je izjava, v kateri nastopajo znaki $<$, $>$, $\leq$ ali $\geq$.
+                    \end{alertblock}}
+                    \only<1-2>{~ \\ ~ \\ ~ \\ ~ \\}
+                    % \only<3->{\begin{alertblock}{}
+                    %     \textbf{Neenakost} je izjavna oblika, v kateri nastopajo znaki $<$, $>$, $\leq$ ali $\geq$.
+                    % \end{alertblock}
+                    \only<3->{ $$ 12.5 - 2 > 8 $$  $$ 3 + 6 \leq 9 $$}
 
                 \column{0.45\textwidth}
                     \onslide<2->{\begin{table}
@@ -235,7 +229,7 @@
 
         \begin{frame}[t]
             \only<1->{\begin{alertblock}{}
-                \textbf{Osnovna množica} $\mathbf{\mathcal{U}}$ je množica števil, ki jih smemo uporabiti pri reševanju neenačbe. Če osnovna množica ni posebej izbrana, je $\mathcal{U}=\mathbb{N}$. 
+                \textbf{Osnovna množica} $\mathbf{\mathcal{U}}$ je množica števil, ki jih smemo uporabiti pri reševanju neenačbe. Če osnovna množica ni posebej izbrana, je $\mathcal{U}=\mathbb{N}_0$ (naravna števila skupaj s številom $0$). 
             \end{alertblock}}
 
             \only<2->{\begin{alertblock}{}
@@ -261,14 +255,111 @@
 
             \only<6->{\begin{block}{}
                 Množica rešitev je odvisna od osnovne množice.
-                Kadar v osnovni množici ni števila, ki reši enačbo ali neenačbo, je množica rešitev prazna. Kar zapišemo $\mathcal{R}=\emptyset$ ali $\mathcal{R}=\left\{\right\}$.
+                Kadar v osnovni množici ni števila, ki reši neenačbo, je množica rešitev prazna, kar zapišemo $\mathcal{R}=\emptyset$ ali $\mathcal{R}=\left\{\right\}$.
             \end{block}}
         \end{frame}
 
         \begin{frame}[t]
-            \begin{exampleblock}{Reševanje neenačbe s preglednico}
+            \begin{exampleblock}{REŠEVANJE NEENAČBE S PREMISLEKOM}
+                Naj bo $\mathcal{U}=\mathbb{N}_0$. \\
+                Poiskati želimo števila, ki ustrezajo neenačbi $\mathbf{2\frac{5}{7}< x \leq 8\frac{1}{3}}$. \\ ~\\
+                \only<2->{Razmislimo, katera izmed naravnih števil lahko vstavimo namesto $x$-a, da bo izjava pravilna. \\}
+                \only<3->{Takšna števila so: $x\in\left\{3,4,5,6,7,8\right\}$. \\}
+                \only<4->{Zapišemo še množico rešitev: $\mathbf{\mathcal{R}=\left\{3,4,5,6,7,8\right\}}$.}
+
+            \end{exampleblock}
+
+            \only<5->{\begin{block}{PREDSTAVITEV MNOŽICE REŠITEV NA ŠTEVILSKI PREMICI}
+                Na številski premici želimo predstaviti zgornjo rešitev. \\ ~ \\ 
+                \only<6->{
+                    \begin{figure}
+                        \begin{tikzpicture}
+                            % \clip (0,0) rectangle (14.000000,10.000000);
+                            {\footnotesize
+                            
+                            % Drawing segment A B
+                            \draw [line width=0.016cm] (0.500000,1.500000) -- (11.000000,1.500000);%
+                            
+                            % Drawing arrow A B 1.00
+                            \draw [line width=0.016cm] (10.702567,1.539158) -- (11.000000,1.500000);%
+                            \draw [line width=0.016cm] (10.702567,1.539158) -- (10.900856,1.500000);%
+                            \draw [line width=0.016cm] (10.702567,1.460842) -- (11.000000,1.500000);%
+                            \draw [line width=0.016cm] (10.702567,1.460842) -- (10.900856,1.500000);%
+                            
+                            % Marking point 0
+                            \draw (1.000000,1.500000) node [anchor=north] { $0$ };%
+                            
+                            % Marking point 1
+                            \draw (2.000000,1.500000) node [anchor=north] { $1$ };%
+                            
+                            % Marking point 2
+                            \draw (3.000000,1.500000) node [anchor=north] { $2$ };%
+                            
+                            % Marking point 3
+                            \draw (4.000000,1.500000) node [anchor=north] { $3$ };%
+                            
+                            % Marking point 4
+                            \draw (5.000000,1.500000) node [anchor=north] { $4$ };%
+                            
+                            % Marking point 5
+                            \draw (6.000000,1.500000) node [anchor=north] { $5$ };%
+                            
+                            % Marking point 6
+                            \draw (7.000000,1.500000) node [anchor=north] { $6$ };%
+                            
+                            % Marking point 7
+                            \draw (8.000000,1.500000) node [anchor=north] { $7$ };%
+                            
+                            % Marking point 8
+                            \draw (9.000000,1.500000) node [anchor=north] { $8$ };%
+                            
+                            % Marking point 9
+                            \draw (10.000000,1.500000) node [anchor=north] { $9$ };%
+                            
+                            % Drawing segment 0a 0b
+                            \draw [line width=0.016cm] (1.000000,1.400000) -- (1.000000,1.600000);%
+                            
+                            % Drawing segment 1a 1b
+                            \draw [line width=0.016cm] (2.000000,1.400000) -- (2.000000,1.600000);%
+                            
+                            % Drawing segment 2a 2b
+                            \draw [line width=0.016cm] (3.000000,1.400000) -- (3.000000,1.600000);%
+                            
+                            % Drawing segment 3a 3b
+                            \draw [line width=0.016cm] (4.000000,1.400000) -- (4.000000,1.600000);%
+                            
+                            % Drawing segment 4a 4b
+                            \draw [line width=0.016cm] (5.000000,1.400000) -- (5.000000,1.600000);%
+                            
+                            % Drawing segment 5a 5b
+                            \draw [line width=0.016cm] (6.000000,1.400000) -- (6.000000,1.600000);%
+                            
+                            % Drawing segment 6a 6b
+                            \draw [line width=0.016cm] (7.000000,1.400000) -- (7.000000,1.600000);%
+                            
+                            % Drawing segment 7a 7b
+                            \draw [line width=0.016cm] (8.000000,1.400000) -- (8.000000,1.600000);%
+                            
+                            % Drawing segment 8a 8b
+                            \draw [line width=0.016cm] (9.000000,1.400000) -- (9.000000,1.600000);%
+                            
+                            % Drawing segment 9a 9b
+                            \draw [line width=0.016cm] (10.000000,1.400000) -- (10.000000,1.600000);%
+                            }
+                            \end{tikzpicture}
+                                                        
+                    \end{figure}
+                }
+
+                
+            \end{block}}
+
+        \end{frame}
+
+        \begin{frame}[t]
+            \begin{exampleblock}{REŠEVANJE NEENAČBE S PREGLEDNICO}
                 Naj bo $\mathcal{U}=\left\{\frac{1}{3},\frac{2}{3},1,1\frac{1}{3}\right\}$. \\
-                Rešujemo enačbo $x+2\frac{1}{2}\leq 3\frac{1}{2}$.
+                Rešujemo enačbo $\mathbf{x+2\frac{1}{2} < 3\frac{1}{2}}$.
                 \only<2>{\begin{table}
                     \centering
                     \addtolength{\tabcolsep}{6pt}
@@ -300,50 +391,44 @@
                         \hline
                                 $\frac{2}{3}$ & $\frac{2}{3}+2\frac{1}{2}=3\frac{1}{6}$ & $3\frac{1}{2}$ & P \\ 
                         \hline
-                                 $1$ & $1+2\frac{1}{2}=3\frac{1}{2}$ & $3\frac{1}{2}$ & P \\  
+                                 $1$ & $1+2\frac{1}{2}=3\frac{1}{2}$ & $3\frac{1}{2}$ & N \\  
                         \hline
                          $1\frac{1}{3}$ & $1\frac{1}{3}+2\frac{1}{2}=3\frac{5}{6}$ & $3\frac{1}{2}$ & N \\
                         \hline
                     \end{tabular}
                 \end{table}}
 
-                \only<4->{Zapišemo množico rešitev: $\mathcal{R}=\left\{\frac{1}{3},\frac{2}{3},1\right\}$.
+                \only<4->{Zapišemo množico rešitev: $\mathcal{R}=\left\{\frac{1}{3},\frac{2}{3}\right\}$.
                 }
             \end{exampleblock}
         \end{frame}
 
-        \begin{frame}[t]
+        % \begin{frame}[t]
             
-            \begin{exampleblock}{Reševanje neenačbe (način???)}
-                Naj bo $\mathcal{U}$ množica vseh nenegativnih števil. Rešiti želimo neenačbo $3\cdot x+4\frac{1}{2}\leq 15\frac{1}{4}$.
+        %     \begin{exampleblock}{Reševanje neenačbe z ekvivalentnim preoblikovanjem}
+        %         Naj bo $\mathcal{U}$ množica vseh nenegativnih števil. Rešiti želimo neenačbo $3\cdot x+4\frac{1}{2}\leq 15\frac{1}{4}$.
                 
-                \begin{columns}
-                    \column{0.45\textwidth}
-                        \only<2->{$$3\cdot x+4\frac{1}{2}\leq 15\frac{1}{4}$$}
-                        \only<4->{$$3\cdot x\leq 15\frac{1}{4}-4\frac{1}{2}$$}
-                        \only<5->{$$3\cdot x\leq 10\frac{3}{4}$$}
-                        \only<7->{$$x\leq \frac{43}{4}:3 $$}
-                        \only<8->{$$x\leq 3\frac{7}{12}$$}
-                        % $$x\leq 3\frac{7}{12}$$
+        %         \begin{columns}
+        %             \column{0.45\textwidth}
+        %                 \only<2->{$$3\cdot x+4\frac{1}{2}\leq 15\frac{1}{4}$$}
+        %                 \only<4->{$$3\cdot x\leq 15\frac{1}{4}-4\frac{1}{2}$$}
+        %                 \only<5->{$$3\cdot x\leq 10\frac{3}{4}$$}
+        %                 \only<7->{$$x\leq \frac{43}{4}:3 $$}
+        %                 \only<8->{$$x\leq 3\frac{7}{12}$$}
+        %                 % $$x\leq 3\frac{7}{12}$$
 
-                    \column{0.53\textwidth}
-                        \only<3->{Na obeh straneh neenačbe odštejemo $4\frac{1}{2}$. \\}
-                        \only<4->{~\\}
-                        \only<5->{~\\ ~\\}
-                        \only<6->{Obe strani neenačbe delimo s $3$. \\}  
-                        \only<7->{~ \\}
-                        \only<8->{~ \\}
-                \end{columns}
-            \end{exampleblock}
+        %             \column{0.53\textwidth}
+        %                 \only<3->{Na obeh straneh neenačbe odštejemo $4\frac{1}{2}$. \\}
+        %                 \only<4->{~\\}
+        %                 \only<5->{~\\ ~\\}
+        %                 \only<6->{Obe strani neenačbe delimo s $3$. \\}  
+        %                 \only<7->{~ \\}
+        %                 \only<8->{~ \\}
+        %         \end{columns}
+        %     \end{exampleblock}
 
-        \end{frame}
+        % \end{frame}
 
-        \begin{frame}
-            \begin{block}{Predstavitev množice rešitev na številski premici}
-                Predstaviti želimo vsa nenegativna števila, ki manjša ali enaka $3\frac{7}{12}$.
-                
-            \end{block}
-        \end{frame}
 
         % \subsection{Špela se preizkusi}
         
